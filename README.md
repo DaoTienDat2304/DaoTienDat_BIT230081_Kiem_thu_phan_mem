@@ -1,119 +1,38 @@
 # Bài tập Kiểm thử Tự động End-to-End với Cypress
+Nội dung bài tập
 
-## 📋 Mô tả
+Sử dụng Cypress để xây dựng và chạy các kịch bản kiểm thử end-to-end cho website mẫu https://www.saucedemo.com
+, bao gồm:
 
-Dự án kiểm thử tự động cho website **SauceDemo** (https://www.saucedemo.com) sử dụng Cypress.
+Kiểm thử đăng nhập thành công và thất bại
 
-## 🚀 Yêu cầu hệ thống
+Kiểm thử thêm sản phẩm vào giỏ hàng
 
-- Node.js (phiên bản 14 trở lên)
-- npm
-- Visual Studio Code (khuyến nghị)
+Kiểm thử sắp xếp sản phẩm theo giá (low to high)
 
-## 📦 Cài đặt
+Kiểm thử xóa sản phẩm khỏi giỏ hàng
 
-### 1. Cài đặt Node.js
-Tải và cài đặt từ: https://nodejs.org/ (chọn phiên bản LTS)
+Kiểm thử quy trình thanh toán (checkout)
 
-### 2. Cài đặt dependencies
-```bash
-npm install
-```
+Các kịch bản được cài đặt trong thư mục cypress/e2e và thực thi thông qua Cypress Test Runner.
+Kết quả nghiệm thu
 
-## 🏃 Chạy kiểm thử
+Bài thực hành giúp em hiểu rõ quy trình kiểm thử tự động End-to-End bằng Cypress, từ khởi tạo dự án, viết test case đến chạy và quan sát kết quả kiểm thử.
 
-### Mở giao diện Cypress:
-```bash
-npx cypress open
-```
+Thông qua các kịch bản đăng nhập, giỏ hàng và thanh toán, em nắm được cách mô phỏng hành vi người dùng thực tế, góp phần phát hiện lỗi sớm và đảm bảo các chức năng chính của hệ thống hoạt động đúng.
+Kết quả kiểm thử:
+ảnh kịch bản 1+2 (đăng nhập)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fafd7e18-76cf-4bc7-b2a6-e5fbcedda5c0" />
 
-### Chạy tất cả tests trong terminal:
-```bash
-npx cypress run
-```
+ảnh kịch bản 3 (thêm 1 sản phẩm vào giỏ hàng)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d2469796-14e9-4d6f-9f96-42f9a6b94552" />
 
-### Chạy một file cụ thể:
-```bash
-npx cypress run --spec "cypress/e2e/login_spec.cy.js"
-npx cypress run --spec "cypress/e2e/cart_spec.cy.js"
-npx cypress run --spec "cypress/e2e/checkout_spec.cy.js"
-```
+ảnh kịch bản 4 (tìm kiếm sản phẩm)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9a8020a9-2eba-49db-933b-ab7c86d959e9" />
 
-## 📝 Các kịch bản kiểm thử
+ảnh xóa giỏ hàng chở về 0
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0a47a932-d9f4-404c-8e3b-3cef0779cd59" />
 
-### 1. Login Test (login_spec.cy.js)
+ảnh checkoutstep 2
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f477823e-24a5-478a-89af-02d2e8eb919c" />
 
-**Test 1: Đăng nhập thành công**
-- Truy cập trang https://www.saucedemo.com
-- Nhập username: `standard_user`
-- Nhập password: `secret_sauce`
-- Click nút "Login"
-- Xác minh URL chứa `/inventory.html`
-
-**Test 2: Đăng nhập thất bại**
-- Truy cập trang https://www.saucedemo.com
-- Nhập username không hợp lệ: `invalid_user`
-- Nhập password không hợp lệ: `wrong_password`
-- Click nút "Login"
-- Xác minh hiển thị thông báo lỗi
-
-### 2. Cart Test (cart_spec.cy.js)
-
-**Test 1: Thêm sản phẩm vào giỏ hàng**
-- Đăng nhập với thông tin hợp lệ
-- Click nút "Add to cart" của sản phẩm đầu tiên
-- Xác minh badge giỏ hàng hiển thị số "1"
-
-**Test 2: Sắp xếp sản phẩm theo giá**
-- Đăng nhập với thông tin hợp lệ
-- Chọn bộ lọc "Price (low to high)"
-- Xác minh sản phẩm đầu tiên có giá $7.99
-
-**Test 3: Xóa sản phẩm khỏi giỏ hàng**
-- Đăng nhập và thêm sản phẩm vào giỏ hàng
-- Click nút "Remove"
-- Xác minh badge giỏ hàng không còn hiển thị
-
-### 3. Checkout Test (checkout_spec.cy.js)
-
-**Test: Quy trình thanh toán**
-- Đăng nhập với thông tin hợp lệ
-- Thêm sản phẩm vào giỏ hàng
-- Đi đến trang giỏ hàng
-- Click nút "Checkout"
-- Điền thông tin:
-  - First Name: John
-  - Last Name: Doe
-  - Zip Code: 12345
-- Click nút "Continue"
-- Xác minh URL chứa `/checkout-step-two.html`
-
-## 📊 Cấu trúc dự án
-
-```
-cypress/
-├── e2e/
-│   ├── login_spec.cy.js      # 2 tests: đăng nhập
-│   ├── cart_spec.cy.js        # 3 tests: giỏ hàng
-│   └── checkout_spec.cy.js    # 1 test: thanh toán
-├── support/
-│   ├── commands.js            # Custom commands
-│   └── e2e.js                # Setup file
-cypress.config.js              # Cấu hình Cypress
-package.json                   # Dependencies
-```
-
-## ✅ Kết quả kiểm thử
-
-Tất cả 6 test cases đã được triển khai:
-- ✅ Đăng nhập thành công
-- ✅ Đăng nhập thất bại
-- ✅ Thêm sản phẩm vào giỏ hàng
-- ✅ Sắp xếp sản phẩm theo giá
-- ✅ Xóa sản phẩm khỏi giỏ hàng
-- ✅ Quy trình thanh toán
-
-## 🎓 Tài liệu tham khảo
-
-- [Cypress Documentation](https://docs.cypress.io)
-- [SauceDemo Website](https://www.saucedemo.com)
