@@ -67,6 +67,16 @@ Request: /thoi-su, /the-thao
 Kết quả:
 
 - Avg Response Time: 134.47 ms
-- Throug4. Kết luận
+- Throughput: 63.70 req/s
+- Error Rate: 0%
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8b4c5339-a6e1-46d9-af68-12231609f44d" />
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/17b35610-3323-42f7-b616-83827e80f2a4" />
+
+Nhận xét:
+Website đạt hiệu năng tốt nhất trong kịch bản này với thông lượng cao và thời gian phản hồi thấp. Sau thời gian chạy dài, hệ thống kích hoạt giới hạn truy cập để bảo vệ server.
+
+4 Kết luận:
 Website VnExpress.net có hiệu năng tốt, phản hồi nhanh, ổn định và không phát sinh lỗi ở các mức tải khác nhau. Hệ thống có khả năng mở rộng tốt và cơ chế bảo vệ hợp lý khi bị truy cập liên tục.
