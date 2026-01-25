@@ -1,5 +1,3 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ca12a4cb-97bb-4092-b4e3-08b5e25045d5" /># BÁO CÁO KIỂM THỬ HIỆU NĂNG WEBSITE BẰNG JMETER
-
 ## 1. Thông tin chung
 
 Họ và tên: Đào Tiến Đạt
