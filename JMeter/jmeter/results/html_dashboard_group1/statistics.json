@@ -1,0 +1,34 @@
+{
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 100,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 409.46000000000004,
+    "medianResTime" : 222.5,
+    "minResTime" : 92.0,
+    "maxResTime" : 3276.0,
+    "pct1ResTime" : 1001.4000000000019,
+    "pct2ResTime" : 1817.0,
+    "pct3ResTime" : 3276.0,
+    "throughput" : 10.248001639680261,
+    "receivedKBytesPerSec" : 3073.1671288942407,
+    "sentKBytesPerSec" : 1.1809220639475304
+  },
+  "HTTP Request - VnExpress Trang chu" : {
+    "transaction" : "HTTP Request - VnExpress Trang chu",
+    "sampleCount" : 100,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 409.46000000000004,
+    "medianResTime" : 222.5,
+    "minResTime" : 92.0,
+    "maxResTime" : 3276.0,
+    "pct1ResTime" : 1001.4000000000019,
+    "pct2ResTime" : 1817.0,
+    "pct3ResTime" : 3276.0,
+    "throughput" : 10.248001639680261,
+    "receivedKBytesPerSec" : 3073.1671288942407,
+    "sentKBytesPerSec" : 1.1809220639475304
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "HTTP GET - Trang The Thao VnExpress" : {
+    "transaction" : "HTTP GET - Trang The Thao VnExpress",
+    "sampleCount" : 579,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 138.55785837651112,
+    "medianResTime" : 83.0,
+    "minResTime" : 27.0,
+    "maxResTime" : 763.0,
+    "pct1ResTime" : 345.0,
+    "pct2ResTime" : 446.0,
+    "pct3ResTime" : 590.6000000000004,
+    "throughput" : 32.455156950672645,
+    "receivedKBytesPerSec" : 10027.952733061238,
+    "sentKBytesPerSec" : 3.9935056404147984
+  },
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 1167,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 134.4678663239073,
+    "medianResTime" : 84.0,
+    "minResTime" : 27.0,
+    "maxResTime" : 763.0,
+    "pct1ResTime" : 328.20000000000005,
+    "pct2ResTime" : 431.0,
+    "pct3ResTime" : 574.9199999999996,
+    "throughput" : 63.700873362445414,
+    "receivedKBytesPerSec" : 19688.23919171329,
+    "sentKBytesPerSec" : 7.8068495837882095
+  },
+  "HTTP GET - Trang Thoi Su VnExpress" : {
+    "transaction" : "HTTP GET - Trang Thoi Su VnExpress",
+    "sampleCount" : 588,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 130.44047619047612,
+    "medianResTime" : 84.0,
+    "minResTime" : 27.0,
+    "maxResTime" : 720.0,
+    "pct1ResTime" : 310.4000000000001,
+    "pct2ResTime" : 409.54999999999995,
+    "pct3ResTime" : 557.8700000000002,
+    "throughput" : 32.09606986899563,
+    "receivedKBytesPerSec" : 9923.027578295578,
+    "sentKBytesPerSec" : 3.917977278930131
+  }
+}

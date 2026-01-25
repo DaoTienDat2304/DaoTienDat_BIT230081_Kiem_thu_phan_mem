@@ -1,0 +1,25 @@
+# JMeter Generated Files
+jmeter.log
+*.log
+
+# Results (nếu không muốn commit kết quả thực tế)
+# Bỏ comment nếu muốn ignore:
+# results/*.csv
+# results/*.jtl
+# results/html_report/
+
+# Screenshots (nếu file quá lớn)
+# screenshots/*.png
+# screenshots/*.jpg
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# JMeter backup files
+*.jmx~
+
+# OS generated files
+.DS_Store
+Thumbs.db
